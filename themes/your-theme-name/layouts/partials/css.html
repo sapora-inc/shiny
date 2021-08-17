@@ -1,0 +1,22 @@
+
+<style>
+    body,h1,h2{
+        background-color: #121212;
+        color: #f1f2eb;
+    }
+    .ui-component-button{
+        background-color: #f1f2eb;
+        color: #121212;
+    }
+    .ui-component-card,.ui-component-card h3 {
+        background-color: {{ .Params.screenshotBColor | safeCSS }};
+        color:{{ .Params.fontColor | safeCSS }};
+    }
+    .ui-section-footer--copyright{
+        width: 100%;
+        text-align: center;
+    }
+    /*.ui-text-intro{
+        text-align: justify;
+    }*/
+</style>
